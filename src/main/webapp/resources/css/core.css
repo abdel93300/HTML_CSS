@@ -149,3 +149,7 @@ h4 {
 {width:50%;
 margin-left:15px;
 margin-rigth:15px;}
+
+#navigation li:not(:first-child):before {
+    content: " | ";
+}
