@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../../../resources/css/core.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/htmlstyle.css" />
+<script src="../../../resources/js/jquery.min.js"></script>
+<script src="../../../resources/js/bootstrap.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.body {
+	background-color: #ffffcc;
+}
+
+.titre1 {
+	background-color: yellow;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.sub {
+	float: right; border-radius :5px 5px 5px 5px;
+	background-color: white;
+}
+
+.sub1 {
+	float: right; border-radius :5px 5px 5px 5px;
+	margin-right:25px;
+	background-color: white;
+}
+
+.sub2 {
+	float: right; border-radius :5px 5px 5px 5px;
+	background-color: white;
+}
+</style>
+</head>
+<body class="body">
+	<div class="form-style-2">
+		<form action="" method="post">
+			<fieldset>
+				<legend class="titre1">Client</legend>
+				<label for="civilite">Civilité
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp; <INPUT TYPE="radio" NAME="civilite" VALUE="Mlle">Mademoiselle
+					<INPUT TYPE="radio" NAME="civilite" VALUE="Mme" CHECKED>Madame
+					<INPUT TYPE="radio" NAME="civilite" VALUE="Mr">Monsieur<br>
+				</label> <label for="name"> Nom/Prénom
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="required"></span><input type="text"
+					class="input-field" name="field1" value="" style="width: 419px;">
+					<br>
+				</label> <label for="adresse">Adresse
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="required"></span> <input type="text"
+					class="input-field" name="field1" value="" />
+				</label> <br> <label for="adresse2">Code Postal/Localité <input
+					type="number" size="4" maxlength="4" class="input-field"
+					name="field21" value="" style="width: 170px;" />/<input
+					type="text" class="input-field" name="field22" value="lausanne" />
+				</label> <br> <label for="pays">Pays
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="required"> <select id="styledSelect"
+						class="blueText">
+							<option value="suisse">Suisse</option>
+							<option value="france">France</option>
+							<option value="allemagne">Allemagne</option>
+							<option value="espagne">Espagne</option>
+							<option value="italie">Italie</option>
+					</select></span>
+				</label><br> <label for="name"> Plateforme(s)
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</label><label class="checkbox-inline" style="width: 113px;"> <input
+					type="checkbox" value="" CHECKED>Windows
+				</label> <label class="checkbox-inline" style="width: 112px;"> <input
+					type="checkbox" value="" CHECKED>MacIntosh
+				</label> <label class="checkbox-inline"> <input type="checkbox"
+					value="">Unix
+				</label><br> <label for="applications"> Application(s)</label> <select
+					id="applications" multiple>
+					<option value="bureautique" selected>bureautique</option>
+					<option value="dao">DAO</option>
+					<option value="statistiques">Statistiques</option>
+					<option value="sgbd">SGBD</option>
+					<option value="internet" selected>internet</option>
+				</select> <br>
+			</fieldset>
+		</form>
+	</div>
+	<br>
+	<div class="sub">
+		
+		<input type="reset" value="Effacer" class="sub2" /> 
+		
+		<input type="submit" value="Soumettre formulaire" class="sub1" />
+		
+	</div>
+</body>
+</html>

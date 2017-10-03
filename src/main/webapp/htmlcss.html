@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/htmlstyle.css">
+<meta charset="UTF-8">
+<title>Exemple de formulaire</title>
+<style>
+*
+.body {
+	background-color: #ffffcc;
+}
+
+.titre1 {
+	background-color: yellow;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.sub {
+	background-color: white;
+	float: right;
+}
+</style>
+</head>
+<body>
+	<form action="index.html" method="get">
+		<fieldset>
+			<legend>Client</legend>
+			<label>Civilité : </label> <INPUT TYPE="radio" NAME="civilite"
+				VALUE="Mlle">Mademoiselle <INPUT TYPE="radio"
+				NAME="civilite" VALUE="Mme" CHECKED>Madame <INPUT
+				TYPE="radio" NAME="civilite" VALUE="Mr">Monsieur<br> <br>
+			<label for="nomPrenom">Nom prénom </label> <input type="text"
+				name="nomPrenom" id="nomPrenom"> <br> <label
+				for="adresse">Adresse </label>
+			<textarea name="adresse" id="adresse" cols="60" rows="5"></textarea>
+			<br> <label for="codePostal">Code postal </label> <input
+				type="text" name="codePostal" id="codePostal" maxlength="4">
+			<br> <label for="pays">pays </label> <select name="pays"
+				id="pays">
+				<optgroup label="Europe">
+					<option value="france">France</option>
+					<option value="belgique">Belgique</option>
+					<option value="suisse" selected>Suisse</option>
+				</optgroup>
+
+				<optgroup label="Amérique">
+					<option value="canada">Canada</option>
+				</optgroup>
+
+				<optgroup label="Afrique">
+					<option value="maroc">Maroc</option>
+					<option value="tunisie">Tunisie</option>
+					<option value="algerie">Algerie</option>
+					<option value="togo">Togo</option>
+					<option value="rwanda">Rwanda</option>
+				</optgroup>
+			</select> <br> <label> Plate-forme</label> <input type="checkbox"
+				name="plateForme" value="Unix" id="unix"> <label for="unix">
+				Linux </label> <input type="checkbox" name="plateForme" value="MacIntosh"
+				id="mac"> <label for="mac"> Mac </label> <input
+				type="checkbox" name="plateForme" value="Windows" id="windows">
+			<label for="windows">Windows</label><br> <label
+				for="applications"> Applications</label> <select id="applications"
+				multiple>
+				<option value="bureautique" selected>bureautique</option>
+				<option value="dao">DAO</option>
+				<option value="statistiques">Statistiques</option>
+				<option value="sgbd">SGBD</option>
+				<option value="internet" selected>internet</option>
+			</select> <br>
+			<div class="sub">
+				<input type="submit" value="Soumettre le formulaire">
+				<input type="reset" value="Effacer">
+			</div>
+			<br>
+		</fieldset>
+	</form>
+</body>
+</html>
+
+
